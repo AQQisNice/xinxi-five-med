@@ -1,0 +1,1 @@
+let cards=[];function addCard(){const q=document.getElementById("q").value;const a=document.getElementById("a").value;cards.push({q,a});render()}function render(){document.getElementById("cards").innerHTML=cards.map(c=>`<div><b>${c.q}</b><br>${c.a}</div>`).join("<hr>")}
